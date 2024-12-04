@@ -1,0 +1,41 @@
+INSERT INTO CATEGORY (ID, NAME) VALUES
+(1, 'Technology'),
+(2, 'Business'),
+(3, 'Art'),
+(4, 'Science'),
+(5, 'Sports'),
+(6, 'Music'),
+(7, 'Education'),
+(8, 'Health'),
+(9, 'Entertainment'),
+(10, 'Culture'),
+(11, 'Food');
+
+
+INSERT INTO LOCATION (ID, NAME, ADDRESS, CAPACITY, DESCRIPTION) VALUES
+(1, 'Main Hall', '123 Main St', 500, 'Main hall for events'),
+(2, 'Conference Room 1', '456 Conference St', 200, 'Room for small meetings'),
+(3, 'Exhibition Hall', '789 Exhibit Ave', 1000, 'Large space for exhibitions'),
+(4, 'Theater', '101 Broadway Ave', 300, 'Venue for performances'),
+(5, 'Outdoor Arena', '202 Park Blvd', 1500, 'Open space for large events'),
+(6, 'Meeting Room A', '303 Office Blvd', 50, 'Small meeting room'),
+(7, 'Lecture Hall', '404 Education Rd', 200, 'Place for lectures and seminars'),
+(8, 'Workshop Room', '505 Workshop Dr', 70, 'Room for practical workshops'),
+(9, 'Banquet Hall', '606 Party Ln', 400, 'Venue for banquets and parties'),
+(10, 'Music Studio', '707 Music Rd', 20, 'Room for recording and music events'),
+(11, 'Sports Arena', '808 Sports Blvd', 10000, 'Venue for sports events');
+
+
+INSERT INTO EVENT (LIKED, POPULARITY_SCORE, CATEGORY_ID, LOCATION_ID, DESCRIPTION, NAME) VALUES
+(true, 4.5, 1, 1, 'A technology-focused event', 'Tech Conference'),
+(true, 4.7, 2, 2, 'Business strategies and networking', 'Business Summit'),
+(false, 3.5, 1, 3, 'Innovative startups in technology', 'Tech Startups Showcase'),
+(true, 4.2, 2, 4, 'Global business trends and challenges', 'Business Leaders Forum'),
+(true, 4.6, 3, 5, 'Contemporary art exhibition', 'Art Exhibition'),
+(true, 4.8, 4, 6, 'Advances in scientific research', 'Science Symposium'),
+(false, 3.2, 5, 7, 'The greatest sports legends', 'Sports Legends Conference'),
+(true, 4.0, 6, 8, 'Music performance and concert', 'Music Festival'),
+(true, 4.3, 7, 9, 'Educating future generations', 'Education Summit'),
+(false, 2.9, 8, 10, 'Health and wellness seminar', 'Health Expo'),
+(true, 5.0, 9, 11, 'World cultures and traditions', 'Cultural Celebration');
+
